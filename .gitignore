@@ -1,0 +1,114 @@
+# ==============================================================================
+# DyG-STMT Git Ignore Rules
+# Excludes heavy datasets, binary checkpoints, local caches, and private reports
+# ==============================================================================
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Datasets and Large Caches (Do NOT push to GitHub)
+dataset/
+raw/
+data_cache/
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.mp4
+*.avi
+*.mkv
+*.mov
+
+# Model Checkpoints and Weights (> 50MB)
+checkpoints/
+*.pth
+*.pt
+*.onnx
+*.bin
+*.tflite
+
+# Internal Academic Reports, Drafts, and Archives
+PROJECT_REPORT/
+audit_reports/
+scratch/
+MERMAID_CODES/
+MERMAID_ARCHITECTURE_CODES/
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.docx
+*.pdf
+
+# Internal Drafts, Viva Guides, and Journal Submission Paperwork
+COVER_LETTER.md
+DECLARATION_OF_COMPETING_INTEREST.md
+HIGHLIGHTS.md
+MANUSCRIPT_EDITABLE_HUMANIZATION.md
+MASTER_PROJECT_REFERENCE_AND_INDEX.md
+MENTOR_EXPLANATION_AND_VIVA_GUIDE.md
+RESEARCH_MANUSCRIPT_DRAFT.md
+ASCE_JTEPBS_SUBMISSION_STRATEGY_AND_ANALYSIS.md
+Ablation_Study_Results.md
+Comparative_Analysis_SOTA_Same_Hyperparameters.md
+Complete_Architecture_Specification_v1_and_v2.md
+Complete_Mathematical_Formulations_Manual.md
+Driver_Drowsiness_Detection_Master_Report.md
+Enhanced_Architecture_Report.md
+FINAL_MASTER_RESEARCH_PROJECT_REPORT.md
+Literature_Review_Master.md
+Phase*.md
+architecture_and_pipeline_interactive.html
+asce_manuscript*.tex
+asce_references.bib
+manuscript.tex
+references.bib
+
+# Redundant Raw Figure Folders (all essential figures are neatly stored in assets/)
+figures/
+figures_new/
+figures_new_new/
+fig_new/
+
+# LaTeX auxiliary build files
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+
+# OS and Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.gemini/
